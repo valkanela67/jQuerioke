@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css?family=Oxygen:400,300,700italic&subset=latin-ext,latin');
+/* SMARTPHONES PORTRAIT */
+@media only screen and (min-width: 300px) {
+  #karaoke-lyrics p{
+      font-size : 16px; 
+  }   
+}
+  
+  /* SMARTPHONES LANDSCAPE */
+@media only screen and (min-width: 480px) {
+  #karaoke-lyrics p{
+      font-size : 26px; 
+  }
+}
+
+/* TABLETS PORTRAIT */
+@media only screen and (min-width: 768px) {
+
+  #karaoke-lyrics p{
+      font-size : 34px; 
+  }
+}
+
+#karaoke-lyrics {  
+  font-family: "Oxygen", HelveticaNeue, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight : bold; 
+  text-shadow : -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  background-color: #0665a2;
+  margin: 0 21px;
+  text-align: center;
+  border: 1px solid white;
+  border-radius: 20px;
+  height: 170px;
+  overflow: hidden;
+}
+
+#karaoke-lyrics p.line {
+  line-height: 20px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  margin: 0;
+}
+
+#karaoke-lyrics p.line:first-child {
+  margin-top: 56px;
+}
+
+#karaoke-lyrics p.line span.word {
+  transition: all linear 0.5s;
+}
+
+#karaoke-lyrics p.line span.word.active {
+  color: #ff8c00;
+  text-shadow : -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+/* LYRIC'S COLOR BEFORE */
+
+.word{
+color: #e3e3e3;
+}
+
+/* LYRIC'S COLOR LATER */
+
+.later{
+color: #ff6a6a;
+}
